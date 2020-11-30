@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Replies;
+use App\User;
 use Illuminate\Http\Request;
 
 class ConversationBestReplyController extends Controller

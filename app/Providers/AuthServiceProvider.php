@@ -37,5 +37,14 @@ class AuthServiceProvider extends ServiceProvider
         });
 
         **/
+
+
+        // authorization filters based on user id or roles or permission
+        Gate::before(function (User $user) {
+            if($user->id === 1) { // admin
+                return true;
+            }
+        });
+        
     }
 }
